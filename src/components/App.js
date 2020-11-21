@@ -1,9 +1,9 @@
 import React, { Component, useState } from "react";
 import "../styles/App.css";
-import slides from "../data";
+// import slides from "../data";
 import Slides from "./slides";
 
-const App = () => {
+const App = ({ slides }) => {
   const [slideNo, setSlideNo] = useState(0);
 
   const handlePrevious = () => {
